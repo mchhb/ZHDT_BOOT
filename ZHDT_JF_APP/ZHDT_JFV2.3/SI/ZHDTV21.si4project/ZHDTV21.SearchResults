@@ -1,0 +1,36 @@
+---- MQTT_PACKET_STRUCTURE Matches (35 in 4 files) ----
+BD_TG_DevLink in BD_TG.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\BDTG) : 	static MQTT_PACKET_STRUCTURE mqttPacket = {NULL, 0, 0, 0};					//协议包
+MQTT_UnSubscribe in BD_TG.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\BDTG) : 	MQTT_PACKET_STRUCTURE mqttPacket = {NULL, 0, 0, 0};					//协议包
+BD_TG_Subscribe in BD_TG.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\BDTG) : 	MQTT_PACKET_STRUCTURE mqttPacket = {NULL, 0, 0, 0};							//协议包
+BD_TG.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\BDTG) line 199 : extern MQTT_PACKET_STRUCTURE mqttPacket;							//协议包
+BD_TG_Publish in BD_TG.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\BDTG) :   MQTT_PACKET_STRUCTURE mqttPacket = {NULL, 0, 0, 0};							//协议包
+BD_TG_RevPro in BD_TG.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\BDTG) : 	MQTT_PACKET_STRUCTURE mqttPacket = {NULL, 0, 0, 0};								//协议包
+LOOP.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\LOOP) line 102 : MQTT_PACKET_STRUCTURE mqttPacket;		
+MqttKit.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 23 : void MQTT_NewBuffer(MQTT_PACKET_STRUCTURE *mqttPacket, uint32 size)
+MqttKit.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 74 : void MQTT_DeleteBuffer(MQTT_PACKET_STRUCTURE *mqttPacket)
+MQTT_PacketConnect in MqttKit.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) : 						MQTT_PACKET_STRUCTURE *mqttPacket)
+MqttKit.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 376 : uint1 MQTT_PacketDisConnect(MQTT_PACKET_STRUCTURE *mqttPacket)
+MqttKit.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 434 : uint1 MQTT_PacketSaveData(const int8 *devid, int16 send_len, int8 *type_bin_head, uint8 type, MQTT_PACKET_STRUCTURE *mqttPacket)
+MqttKit.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 514 : uint1 MQTT_PacketCmdResp(const int8 *cmdid, const int8 *req, MQTT_PACKET_STRUCTURE *mqttPacket)
+MqttKit.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 555 : uint8 MQTT_PacketSubscribe(uint16 pkt_id, enum MqttQosLevel qos, const int8 *topics[], uint8 topics_cnt, MQTT_PACKET_STRUCTURE *mqttPacket)
+MqttKit.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 678 : uint8 MQTT_PacketUnSubscribe(uint16 pkt_id, const int8 *topics[], uint8 topics_cnt, MQTT_PACKET_STRUCTURE *mqttPacket)
+MQTT_PacketPublish in MqttKit.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) : 						MQTT_PACKET_STRUCTURE *mqttPacket)
+MqttKit.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 1026 : uint1 MQTT_PacketPublishAck(uint16 pkt_id, MQTT_PACKET_STRUCTURE *mqttPacket)
+MqttKit.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 1087 : uint1 MQTT_PacketPublishRec(uint16 pkt_id, MQTT_PACKET_STRUCTURE *mqttPacket)
+MqttKit.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 1148 : uint1 MQTT_PacketPublishRel(uint16 pkt_id, MQTT_PACKET_STRUCTURE *mqttPacket)
+MqttKit.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 1209 : uint1 MQTT_PacketPublishComp(uint16 pkt_id, MQTT_PACKET_STRUCTURE *mqttPacket)
+MqttKit.c (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 1269 : uint1 MQTT_PacketPing(MQTT_PACKET_STRUCTURE *mqttPacket)
+Buffer in MqttKit.h (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) : } MQTT_PACKET_STRUCTURE;
+MqttKit.h (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 105 : void MQTT_DeleteBuffer(MQTT_PACKET_STRUCTURE *mqttPacket);
+MQTT_PacketConnect in MqttKit.h (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) : 						MQTT_PACKET_STRUCTURE *mqttPacket);
+MqttKit.h (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 117 : uint1 MQTT_PacketDisConnect(MQTT_PACKET_STRUCTURE *mqttPacket);
+MqttKit.h (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 123 : uint1 MQTT_PacketSaveData(const int8 *devid, int16 send_len, int8 *type_bin_head, uint8 type, MQTT_PACKET_STRUCTURE *mqttPacket);
+MqttKit.h (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 129 : uint1 MQTT_PacketCmdResp(const int8 *cmdid, const int8 *req, MQTT_PACKET_STRUCTURE *mqttPacket);
+MqttKit.h (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 132 : uint8 MQTT_PacketSubscribe(uint16 pkt_id, enum MqttQosLevel qos, const int8 *topics[], uint8 topics_cnt, MQTT_PACKET_STRUCTURE *mqttPacket);
+MqttKit.h (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 138 : uint8 MQTT_PacketUnSubscribe(uint16 pkt_id, const int8 *topics[], uint8 topics_cnt, MQTT_PACKET_STRUCTURE *mqttPacket);
+MQTT_PacketPublish in MqttKit.h (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) : 						MQTT_PACKET_STRUCTURE *mqttPacket);
+MqttKit.h (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 153 : uint1 MQTT_PacketPublishAck(uint16 pkt_id, MQTT_PACKET_STRUCTURE *mqttPacket);
+MqttKit.h (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 159 : uint1 MQTT_PacketPublishRec(uint16 pkt_id, MQTT_PACKET_STRUCTURE *mqttPacket);
+MqttKit.h (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 165 : uint1 MQTT_PacketPublishRel(uint16 pkt_id, MQTT_PACKET_STRUCTURE *mqttPacket);
+MqttKit.h (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 171 : uint1 MQTT_PacketPublishComp(uint16 pkt_id, MQTT_PACKET_STRUCTURE *mqttPacket);
+MqttKit.h (C:\Users\Administrator\Desktop\ZHDT_JFV2.1\User\MQTTBDTG) line 177 : uint1 MQTT_PacketPing(MQTT_PACKET_STRUCTURE *mqttPacket);
