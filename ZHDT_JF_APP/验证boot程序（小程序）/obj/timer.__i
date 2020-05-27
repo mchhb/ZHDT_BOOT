@@ -1,5 +1,0 @@
--c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS -I..\Libraries\FWlib\inc -I..\User\main -I..\User\gpio -I..\User\usart2 -I..\User\adc -I..\User\key -I..\User\pwm_output -I..\User\LOOP -I..\User\delay -I..\User\TIMER 
--I C:\Keil\ARM\RV31\INC 
--I C:\Keil\ARM\CMSIS\Include 
--I C:\Keil\ARM\Inc\ST\STM32F10x 
--DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o "..\obj\timer.o" --omf_browse "..\obj\timer.crf" --depend "..\obj\timer.d" "..\User\TIMER\timer.c"
